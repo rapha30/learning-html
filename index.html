@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="texto" type="text" />
+    <button class="btn">Botao</button>
+
+    <script>
+      var valor = document.querySelector("#texto")
+
+      var btn = document
+        .querySelector(".btn")
+        .addEventListener("click", function (evt) {
+
+          switch (valor.value) {
+            case "Enzo":
+              console.log("Enzo é o nome do meu cachorro");
+              break;
+            case "João":
+              console.log("João é o nome do meu cachorro");
+              break;
+            case "Pedro":
+              console.log("Pedro é o nome do meu cachorro");
+              break;
+            default:
+              console.log("Não sei o nome do meu cachorro");
+          }
+        });
+    </script>
+</body>
+</html>
